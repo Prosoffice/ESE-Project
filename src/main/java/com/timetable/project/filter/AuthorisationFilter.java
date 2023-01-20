@@ -40,7 +40,6 @@ public class AuthorisationFilter implements Filter
         }
         else if (studentIsAuthorised(request))
         {
-            System.out.println(servletResponse);
             filterChain.doFilter(servletRequest, servletResponse);
         }
         else
@@ -87,7 +86,7 @@ public class AuthorisationFilter implements Filter
 
         if (student != null)
         {
-            if (requestURI.startsWith("/student/get/") ||
+            if (requestURI.startsWith("/student/get") ||
                     (requestURI.startsWith("/student/modules/")) ||
                     (requestURI.startsWith("/student/timetable"))
             )

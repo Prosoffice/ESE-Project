@@ -22,8 +22,8 @@ public class DTOFactory {
         StudentDTO studentDTO =
                 new StudentDTO(
                         student.getId(),
-                        student.getEmail(),
                         student.getName(),
+                        student.getEmail(),
                         student.getDepartment().toString(),
                         student.getToken());
 
@@ -77,8 +77,8 @@ public class DTOFactory {
         TimetablerDTO timetablerDTO =
                 new TimetablerDTO(
                         timetabler.getId(),
-                        timetabler.getEmail(),
                         timetabler.getName(),
+                        timetabler.getEmail(),
                         timetabler.getToken());
 
         return timetablerDTO;
@@ -95,8 +95,8 @@ public class DTOFactory {
                         classSchedule.getId(),
                         classSchedule.getStart_time(),
                         classSchedule.getEnd_time(),
-                        classSchedule.getLecture_room().getName(),
                         classSchedule.getModule().getName(),
+                        classSchedule.getLecture_room().getName(),
                         classSchedule.getWeek()
                 );
 

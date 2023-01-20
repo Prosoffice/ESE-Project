@@ -25,7 +25,6 @@ public class ScheduleClassCommand implements Command{
 
         ClassSchedule possibleClassSchedule = entityFactory.create(classScheduleData, moduleRepository,
                 lectureRoomRepository, dateParser);
-
         return classScheduleRepository.save(possibleClassSchedule);
     }
 }

@@ -32,7 +32,7 @@ public class StudentController{
         return dtoFactory.create(studentService.createStudent(student));
     }
 
-    @GetMapping(path = "/get/profile/{id}")
+    @GetMapping(path = "/get/{id}")
     public StudentDTO getStudent(
             @PathVariable(name = "id")
             @Min(value = 1, message = "Id must be greater than zero") int id

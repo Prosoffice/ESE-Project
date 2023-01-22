@@ -2,6 +2,7 @@ SET FOREIGN_KEY_CHECKS=0;
 drop table if exists timetabler;
 drop table if exists module;
 drop table if exists lecture_room;
+drop table if exists class_schedule;
 SET FOREIGN_KEY_CHECKS=1;
 
 create table timetabler
@@ -43,7 +44,7 @@ alter table student
 add token varchar(50);
 
 insert into timetabler(email, name, password)
-VALUES ('staff1@staff.com', 'Staff 1', 'staff_1'),
+VALUES ('staff1@gmail.com', 'Staff 1', 'passwordstaff'),
        ('staff2@staff.com', 'Staff 2', 'staff_2');
 
 insert into lecture_room(name)
@@ -54,4 +55,8 @@ insert into module(name, department)
 VALUES ('Pervasive Computing', 2),
        ('Enterprise Systems', 1),
        ('AWS Cloud Basics', 2),
-       ('Professional Software Engineering', 2);
+       ('Professional Software Engineering', 2),
+       ('Securing Networks', 1),
+       ('Protocol Management', 1),
+       ('CyberCrime and Management', 1),
+       ('Web Principles', 2);

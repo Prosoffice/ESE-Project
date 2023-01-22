@@ -25,5 +25,5 @@ VALUES('Cybersecurity'),
        ('Software Engineering');
 
 INSERT INTO student (email, name, password, department)
-VALUES ('ogbonnayaprosper1@gmail.com', 'Prosper Ogbonnaya', 'KEle12345', 2),
-       ('answerpros@gmail.com', 'Answer Henry', '1234pj', 1);
+VALUES ('ogbonnayaprosper1@gmail.com', 'Prosper Ogbonnaya', 'password1', 2),
+       ('answerpros@gmail.com', 'Answer Henry', 'password2', 1);

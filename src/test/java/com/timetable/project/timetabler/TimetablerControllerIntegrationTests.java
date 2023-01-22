@@ -1,6 +1,5 @@
 package com.timetable.project.timetabler;
 
-import com.timetable.project.entity.StudentDepartment;
 import com.timetable.project.entity.Timetabler;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
